@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardContent, CardFooter, CardHeader } from '../ui/card';
+import { Card, CardContent, CardFooter, CardHeader } from './card';
 
 
 const CustomCard = ({
