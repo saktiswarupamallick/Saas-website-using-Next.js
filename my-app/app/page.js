@@ -8,7 +8,7 @@ import { CLIENTS ,USERS } from '../lib/constants';
 import { randomUUID } from 'crypto';
 import { twMerge } from 'tailwind-merge';
 import clsx from 'clsx';
-    
+import CustomCard from '../componentstyles/custom-card';
 import { Avatar, AvatarFallback, AvatarImage } from '../componentstyles/avatar';
 import { CardContent, CardDescription, CardTitle } from '../componentstyles/card';
 
