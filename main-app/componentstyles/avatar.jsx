@@ -1,7 +1,7 @@
 import * as React from "react"
 import * as AvatarPrimitive from "@radix-ui/react-avatar"
 
-// Removed the import of `cn`
+
 
 const Avatar = React.forwardRef(
   ({ className, ...props }, ref) => (
