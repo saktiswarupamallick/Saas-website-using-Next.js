@@ -1,10 +1,10 @@
 import React from 'react';
-import TitleSection from '@/components/landing-page/title-section';
-import { Button } from '@/components/ui/button';
+import TitleSection from '../componentstyles/title-section';
+import { Button } from '../componentstyles/button';
 import Image from 'next/image';
 import Banner from '../public/appBanner.png';
 import Cal from '../public/cal.png';
-import { CLIENTS ,USERS } from '@/lib/constants';
+import { CLIENTS ,USERS } from '../lib/constants';
 import { randomUUID } from 'crypto';
 import { twMerge } from 'tailwind-merge';
 import clsx from 'clsx';
