@@ -49,6 +49,7 @@ const HomePage = () => {
             rounded-[10px]
             p-6
             text-2xl
+            text-white
             bg-background
           "
           >
