@@ -1,6 +1,6 @@
 import React from 'react';
-import TitleSection from '../componentstyles/title-section';
-import { Button } from '../componentstyles/button';
+import TitleSection from '../components/componentstyles/title-section';
+import { Button } from '../components/componentstyles/button';
 import Image from 'next/image';
 import Banner from '../public/appBanner.png';
 import Cal from '../public/cal.png';
@@ -9,13 +9,15 @@ import { randomUUID } from 'crypto';
 import { twMerge } from 'tailwind-merge';
 import clsx from 'clsx';
 import CustomCard from '../componentstyles/custom-card';
-import { Avatar, AvatarFallback, AvatarImage } from '../componentstyles/avatar';
+import { Avatar, AvatarFallback, AvatarImage } from '../components/componentstyles/avatar';
 import { CardContent, CardDescription, CardTitle } from '../componentstyles/card';
+
 
 const HomePage = () => {
   return (
     <>
       <section
+       
         className=" overflow-hidden
       px-4
       sm:px-6

@@ -2,7 +2,7 @@ import React, { forwardRef } from 'react';
 import { Slot } from '@radix-ui/react-slot';
 import { cva } from 'class-variance-authority';
 
-import { cn } from '../lib/utils';
+import { cn } from '../../lib/utils';
 import Image from 'next/image';
 import { twMerge } from 'tailwind-merge';
 
