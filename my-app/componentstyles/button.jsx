@@ -1,6 +1,8 @@
-import * as React from 'react';
+import React, { forwardRef } from 'react';
 import { Slot } from '@radix-ui/react-slot';
 import { cva } from 'class-variance-authority';
+
+import { cn } from '../lib/utils';
 import Image from 'next/image';
 import { twMerge } from 'tailwind-merge';
 
@@ -38,7 +40,7 @@ const buttonVariants = cva(
   }
 );
 
-export const Button = React.forwardRef(
+const Button = forwardRef(
   (
     {
       className,
@@ -56,7 +58,7 @@ export const Button = React.forwardRef(
     if (asChild) {
       return (
         <Slot
-          className={`${buttonVariants({ variant, size, className })}`}
+          className={cn(buttonVariants({ variant, size, className }))}
           ref={ref}
           {...props}
         ></Slot>
@@ -65,7 +67,7 @@ export const Button = React.forwardRef(
 
     return (
       <button
-        className={`${buttonVariants({ variant, size, className })}`}
+        className={cn(buttonVariants({ variant, size, className }))}
         ref={ref}
         {...props}
       >
@@ -73,7 +75,7 @@ export const Button = React.forwardRef(
           <Image
             src={icon}
             alt="icon"
-            className={`${twMerge('mr-2')} ${logoStyles}`}
+            className={(twMerge('mr-2'), logoStyles)}
             width={30}
           />
         )}
@@ -85,4 +87,4 @@ export const Button = React.forwardRef(
 
 Button.displayName = 'Button';
 
-export { buttonVariants };
+export { Button, buttonVariants };
